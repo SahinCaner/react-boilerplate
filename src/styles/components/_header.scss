@@ -1,18 +1,10 @@
-.header {
-  background: $dark-blue;
-}
-
-.header__content {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: $s-size 0;
-}
-
-.header__title {
-  color: white;
-  text-decoration: none;
-  h1 {
-    margin: 0;
-  }
+.header__navigation {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.7);
 }

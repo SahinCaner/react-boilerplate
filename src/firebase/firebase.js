@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import * as firebase from "firebase";
 
 var config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -12,9 +12,8 @@ var config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
-const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, googleAuthProvider, database as default };
+export { firebase, database as default };
 
 // // child_removed
 // database.ref('expenses').on('child_removed', (snapshot) => {
@@ -65,11 +64,6 @@ export { firebase, googleAuthProvider, database as default };
 //   amount: 109500,
 //   createdAt: 976123498763
 // });
-
-
-
-
-
 
 // // database.ref('notes/-Krll52aVDQ3X6dOtmS7').remove();
 
